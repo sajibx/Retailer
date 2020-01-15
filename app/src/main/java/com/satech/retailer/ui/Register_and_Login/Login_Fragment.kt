@@ -11,6 +11,7 @@ import com.satech.retailer.MainActivity
 
 import com.satech.retailer.R
 import com.satech.retailer.ui.Camera_Activity
+import com.satech.retailer.ui.other.Place
 import kotlinx.android.synthetic.main.fragment_login_.*
 
 /**
@@ -30,11 +31,13 @@ class Login_Fragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         login.setOnClickListener()
         {
-            //startActivity(Intent(context, MainActivity::class.java))
-            //activity!!.finish()
-
-            startActivity(Intent(context, Camera_Activity::class.java))
+            startActivity(Intent(context, MainActivity::class.java))
             activity!!.finish()
+
+//            startActivity(Intent(context, Camera_Activity::class.java))
+//            activity!!.finish()
+
+            //startActivity(Intent(context, Place::class.java))
         }
     }
 

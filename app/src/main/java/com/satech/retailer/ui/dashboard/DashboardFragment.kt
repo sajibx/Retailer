@@ -11,6 +11,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.google.android.material.snackbar.Snackbar
 import com.satech.retailer.R
+import com.satech.retailer.data.AppSession
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_dashboard.*
 
@@ -36,6 +37,10 @@ class DashboardFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         //Snackbar.make(container, "here",Snackbar.LENGTH_LONG).show()
+        button4.setOnClickListener()
+        {
+            Toast.makeText(context, AppSession.latitude.toString()+" - "+AppSession.longitude.toString(), Toast.LENGTH_LONG).show()
+        }
 
     }
 }

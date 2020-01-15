@@ -31,7 +31,7 @@ class Splash_Screen : Fragment() {
         Handler().postDelayed(
             {
                 val transaction = activity!!.supportFragmentManager.beginTransaction()
-                var login_fragment = Camera_Fragment()//Login_Fragment()
+                var login_fragment = Login_Fragment()
                 transaction.replace(R.id.splash_fragment, login_fragment)
                 transaction.addToBackStack(null)
                 transaction.commit()

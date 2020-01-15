@@ -15,7 +15,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.Camera_Activity"></activity>
+        <activity android:name=".ui.other.Place"></activity>
+        <activity android:name=".ui.Camera_Activity" />
         <activity android:name=".MainActivity" />
         <activity
             android:name=".SplashScreen"
@@ -26,6 +27,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDhgJ64NBdsR1Kvo3wXgHcnIzsqukQzFmM" />
     </application>
 
 </manifest>

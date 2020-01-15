@@ -52,5 +52,10 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
     implementation 'me.dm7.barcodescanner:zxing:1.9.8'
 
+    implementation 'com.google.android.gms:play-services-maps:16.1.0'
+    implementation 'com.sucho:placepicker:1.0.0'
+
+    implementation 'com.google.android.material:material:1.1.0-alpha01'
+
 
 }
